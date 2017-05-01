@@ -92,7 +92,7 @@ This goes for author sidebar links and "share button" additions -- I have no int
 
 When submitting a pull request:
 
-1. Clone the repo.
+41. Clone the repo.
 2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`) and describe the feature or fix.
 3. Open a pull request on GitHub.
 
@@ -158,4 +158,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Testin
+Testin4
