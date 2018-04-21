@@ -1,0 +1,8 @@
+---
+title:  "theFirst"
+date:   2017-03-05 20:15:00
+category: til
+tags: [command-line, efficiency]
+---
+
+Today I will know to set up a jekyll site when this becomes live.

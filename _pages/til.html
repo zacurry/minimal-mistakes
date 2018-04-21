@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Today I Learned"
+permalink: /til/
+---
+
+{% include base_path %}
+{% assign numTil = site.til | size %}
+{% assign numToGo = 100 | minus:numTil %}
+
+
+<div class="grid__wrapper">
+  {% for post in site.til reversed %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
