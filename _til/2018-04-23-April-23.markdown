@@ -1,0 +1,12 @@
+---
+title:  "April 23 -  "
+date:   2018-04-23 07:34:00
+category: til
+tags: [life]
+---
+
+TIL nothing ,so , this website proudly presents - 
+###TBIL (things betsy learned today) - 
+UI  Router - state provider works by replacing the <ui-view> component for every route.
+Set up a static server by herself
+Integrating google login to a website.
