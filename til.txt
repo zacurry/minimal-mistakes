@@ -349,5 +349,14 @@ exports.uploadFile = function (uri, params, opts) {
 
   return req;
 };
-
+---------------------
+    return res.status(422).send({
+      status: 'error: host details not present'  
+    })
+wont come here
+----------------
+$q.deferred
+----------------------------
+app cache use ask so
+--------------------
 
