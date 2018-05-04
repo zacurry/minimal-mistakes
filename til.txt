@@ -1,0 +1,353 @@
+sequelize :
+node_modules/sequelize-cli/bin/sequelize db:migrate
+
+nodejs node_modules/node-sass/scripts/install.js
+npm rebuild node-sass
+
+
+As as a general rule processes running without root privileges cannot bind to ports below 1024
+
+Check if a process is running :
+
+ps aux | grep server.js
+
+$ ps aux  
+USER       PID  %CPU %MEM  VSZ RSS     TTY   STAT START   TIME COMMAND
+timothy  29217  0.0  0.0 11916 4560 pts/21   S+   08:15   0:00 pine  
+root     29505  0.0  0.0 38196 2728 ?        Ss   Mar07   0:00 sshd: can [priv]   
+can      29529  0.0  0.0 38332 1904 ?        S    Mar07   0:00 sshd: can@notty  
+USER = user owning the process
+PID = process ID of the process
+%CPU = It is the CPU time used divided by the time the process has been running.
+%MEM = ratio of the process’s resident set size to the physical memory on the machine
+VSZ = virtual memory usage of entire process (in KiB)
+RSS = resident set size, the non-swapped physical memory that a task has used (in KiB)
+TTY = controlling tty (terminal)
+STAT = multi-character process state
+START = starting time or date of the process
+TIME = cumulative CPU time
+COMMAND = command with all its arguments
+
+http://javascript.tutorialhorizon.com/2015/07/02/send-email-node-js-express/
+
+q)How to exit git log or git diff? 
+a)You're in the less program, which makes the output of git log scrollable.
+Type q to exit this screen. Type h to get help.
+
+LOcalization stategies (john resig)
+
+https://news.ycombinator.com/item?id=15526967
+https://twitter.com/NelsonMRosario/status/921550998233079808
+http://www.makeuseof.com/tag/how-to-be-more-productive-when-working-from-home/
+http://www.makeuseof.com/tag/6-signs-meant-programmer/
+
+https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/
+
+hash command - linux
+
+How to do a git resolve
+--------------
+checkout parent to get the latest osurce
+now go back to branch
+git merge parent
+now go to file and manually change
+git commit
+
+--------------
+toString() - acts on the object when printed
+
+---------------------------
+open new terminal :
+ctrl+alt+tab
+open new terminal in current tab :
+ctr+shift+tab
+
+---------------------------------------
+I spent several years looking to quit programming and found it: I'm a finance/biz analyst.
+
+It's a big move and has big consequences:
+Programmers are intellectually superior to other professionals. When a programmer moves to another job, he/she becomes the smartest guy in the room.
+This is both a pro and a con depending on your character. I fucking hate it.
+Programmers are lazy and entitled. 
+If your'e still reading, I mean it relatively. Try working in a restaurant "back end", i.e. the kitchen/loading bay/supply van, and witness the other end of employer-employee relations spectrum. Financial analysis is closer to a kitchen than to engineering, you get micro-tasks to be performed immediately.
+I code more than before, but I code for myself and don't check-in anything. I don't even have CVS anymore. This difference alone takes 90% of the stress out.
+Programmers' professional integrity is impeccable, which is not required at all in finance and can even be a problem. The first time it came to me as a shock when boss asked me to calculate something and said the result "should be X". I thought only "public sector" "economists" do that. Turns out big companies are all politics and whose managers fight each other by asking analysts to cook the numbers. It made me throw up but after recouping my cynicism I learned to like it, it feels like I'm an evil wizard who can turn a prince into a frog.
+Programmers are respected, analysts are not. This manifests in the people who manage them. 
+When companies hire dev-managers they try very hard (and still fail most of the time). Good companies let teams interview their prospective bosses.
+In finance, any schmuck can be your boss. A politicking parrot with MBA in cocksucking can manage a team of mathematicians or ex-programmers.
+Remember the retarded fuck who paid you to do his university chores cause he's too stupid and lazy? he's your boss now, the investment has paid off.
+The uber-difference: work ends at 6 PM and nothing is carried over. When you get home your'e a free man just like the restaurant worker. Nobody expects you to fix bugs at midnight. Sloppy work doesn't get back at you, It's a miracle if anyone can even tell when you slack.
+In engineering, you operate under the force of inevitability. Everything you do must be done, and correctly. Slack one line of code and it'll get back at you. Slack a class and more code needs to be rewritten. Slack a design and the whole thing needs refactoring. Any slacking is turned against you, with due interest. That totally sucks.
+In "business" the force of who-fucking-cares-lol holds supreme. Numbers are subjective. Logic is a personal perspective. Do what you want as long as you say the right things (gracefully dictated by your bosses).
+Summary: switching from programming to finance takes off 30% of income, 90% of respect and "status", and 100% of stress and commitment.
+-------------------
+architecture
+teaching
+writing
+farming
+---------
+http://wiki.c2.com/?AlternativeJobsForProgrammers
+
+--------------------
+https://github.com/bookercodes
+
+'use strict';
+
+module.exports = {
+  up: function (queryInterface, Sequelize) {
+    return queryInterface.createTable('user_alert_filter_host',
+      {
+        id: {
+          type: Sequelize.INTEGER,
+          primaryKey: true,
+          autoIncrement: true
+        },
+        host_id: {
+          type: Sequelize.INTEGER,
+          references: {
+            model: 'hosts',
+            key: 'id'
+          }
+        },
+        user_alert_filter_id: {
+          type: Sequelize.INTEGER,
+          references: {
+            model: 'user_alert_filters',
+            key: 'id'
+          }
+        },
+        created_at: Sequelize.DATE,
+        updated_at: Sequelize.DATE
+      }
+    );
+  },
+
+  down: function (queryInterface, Sequelize) {
+    return queryInterface.dropTable('user_alert_filter_host');
+  }
+};
+
+What is the difference between a belongs_to and a has_one?
+
+https://stackoverflow.com/users/229602/noufal-ibrahim
+
+Monkey patching
+
+https://github.com/raboof/nethogs
+
+https://stackoverflow.com/questions/24353778/which-is-best-data-type-for-phone-number-in-mysql-and-what-should-java-type-mapp :
+
+In MySQL -> INT(10) does not mean a 10-digit number, it means an integer with a display width of 10 digits. The maximum value for an INT in MySQL is 2147483647 (or 4294967295 if unsigned).
+
+You can use a BIGINT instead of INT to store it as a numeric. Using BIGINT will save you 3 bytes per row over VARCHAR(10).
+
+https://html.spec.whatwg.org/multipage/input.html#telephone-state-(type%3Dtel)
+
+SET FOREIGN_KEY_CHECKS = 0; 
+TRUNCATE table transfer_send_triggers; 
+SET FOREIGN_KEY_CHECKS = 1;
+-------------------------
+https://stackoverflow.com/questions/7786207/whats-the-difference-between-a-fixture-and-a-factory-in-my-unit-tests
+https://martinfowler.com/bliki/ObjectMother.html
+
+Copy files from one system to another - 
+scp ?
+https://hackattic.com/challenges
+https://github.com/ishanjain28/pluto
+
+coind - 4OV5A64D3MHFQCFZ
+
+18-1-18
+<section>
+  <div class="bg-primary page-title">
+    <h1>{{ 'configurations.titleEditArchiveSettings' | i18n }}</h1>
+  </div>
+  <form name="vm.form.archiveSettingsForm" ng-submit="vm.save(vm.form.archiveSettingsForm.$valid)">
+    <label>Archive Records Older Than
+      <input type="number" name="archive-older-than" ng-model="vm.logsOlderThan" required>
+    </label>
+    <label>csv
+      <input type="radio" name="archive-format" ng-model="vm.formatSelected" value="csv" required><br>
+    </label>
+    <label>gzip
+      <input type="radio" name="archive-format" ng-model="vm.formatSelected" value="gzip" required><br>
+    </label>
+    <label>copyToDatabase
+      <input type="radio" name="archive-format" ng-model="vm.formatSelected" value="copyToDatabase" required><br>
+    </label>        
+    <input type="submit" name="">
+  </form>
+</section>
+
+------------------
+SELECT id, 
+       stats_type, 
+       CASE stats_type 
+         WHEN 'cpu' THEN cpu_usage 
+         WHEN 'memory' THEN memory_usage 
+       end 
+FROM   system_status_logs 
+WHERE  id IN (SELECT Max(id) 
+              FROM   system_status_logs 
+              WHERE  host_id = 10 
+                     AND stats_type IN ( 'cpu', 'memory' ) 
+              GROUP  BY stats_type) 
+------------------
+go to source ->f8
+----------
+_reduce
+------------------
+nbsp;
+why undefined in f12?
+--------------------------
+https://stackoverflow.com/questions/19583140/returning-value-in-underscore-each-loop-does-not-stop-the-function
+-----------------------------------
+vm.gg()
+vm.gg = function() {
+}
+This wont work, wont be hoisted.
+-----------------------
+https://stackoverflow.com/questions/4816099/chrome-sendrequest-error-typeerror-converting-circular-structure-to-json
+
+--------------------------
+https://stackoverflow.com/questions/3663952/what-do-column-flags-mean-in-mysql-workbench
+---------------
+find out how service get data - integrations tooglestatus
+
+-----------------------
+gulp wiredep:prod
+----------------------------
+Math.max.apply(null,versions);
+------------------
+Copy the file "foobar.txt" from the local host to a remote host
+$ scp foobar.txt your_username@remotehost.edu:/some/remote/directory
+
+
+----------------
+  query.logging = console.log;
+  db.Host.findAndCountAll(query)
+
+----------------------
+  if (calledFromCreateTransfer && filterHostOnProtocol && (filterHostOnProtocol.toLowerCase() === 'hulft')) {
+    if (hulftVersion >= 8.4 && forcedStrongKeyMode) {
+      productInclude.where = {
+        version: { $gte: 8.4 }
+      };
+      criteria.options.$and.push({
+        forcedStrongKeyMode: true
+      });
+    } else if (hulftVersion >= 8.4 && !forcedStrongKeyMode) {
+      productInclude.where = {
+        version: { $lte: 8.4 }
+      };
+      criteria.options.$and.push({
+        forcedStrongKeyMode: false
+      });
+    } else if (hulftVersion < 8.4) {
+      productInclude.where = {
+        version: { $lt: 8.4 }
+      }
+
+
+---------------------------
+update mytable set online_status = 'online'
+---------------------
+is true string converted back to boolen by express request object?
+  var filterReceiveHost = (req.query.filterReceiveHost === 'true');
+
+------------------------
+
+20180316050236-add-unique-to-host-ipaddresses-remove-host-foreignkey-migration
+
+module.exports = {
+  up: function (queryInterface, Sequelize) {
+    return queryInterface.sequelize.query(
+      'ALTER TABLE `host_ip_addresses` DROP FOREIGN KEY `host_ip_addresses_ibfk_1`'
+    )
+    .then(function() {
+      return queryInterface.sequelize.query(
+        'ALTER TABLE `host_ip_addresses` ADD UNIQUE `unique_host_ipaddress_index`(`host_id`, `ip_address`)'
+      )
+    })
+  },
+
+  down: function (queryInterface, Sequelize) {
+    return queryInterface.sequelize.query(
+       'ALTER TABLE `host_ip_addresses` DROP INDEX `unique_host_ipaddress_index`'
+    )
+    .then(function() {
+      return queryInterface.sequelize.query(
+        'ALTER TABLE `host_ip_addresses` ADD CONSTRAINT `host_ip_addresses_ibfk_1` FOREIGN KEY (host_id) REFERENCES hosts(id)'
+      )      
+    })
+  }
+};
+--------------------------------------
+----------------------------------------
+todo -
+angularjs menuservice in meanjs - add getMainMenu function 
+
+------------------
+Date.now(); - faster ?
+-------------
+passport initalise
+
+---------------------
+10/04
+sequelize - paranoid - true
+
+type conversion...
+
+ctrl + shift + A
+
+ctrl + tab
+--------------------------
+exports.testPro = function(req, res) {
+   db.Product.findAll({
+    include: [
+      { model: db.Sku, as: 'sku', attributes: ['id', 'sku'] },
+      { model: db.Host, as: 'hosts', required: true, attributes: ['id', 'name'] }
+    ]
+  })
+    .then(function (products) {
+      return '55'
+    }).then(function (products) {
+      res.json('145')
+    })
+  res.json("44")
+}
+-----------------------------------------
+ui-upload
+-------
+1.globall variables iin closure get updated when they change. This causes problem in loops if the loop variable is used leter in callback fn. You have to use bind.
+
+-----
+25/5
+var version
+prodversion = verion || '84' 
+
+---------------
+exports.uploadFile = function (uri, params, opts) {
+  var formattedUrl = url.parse(uri);
+  formattedUrl.host = null;
+  formattedUrl.port = config.agent.port;
+  var _options = _.merge({}, options, opts);
+  _options.uri = url.format(formattedUrl);
+
+  if (config.agent.mock) {
+    return Promise.resolve('success');
+  }
+  console.log('uploadfile------------calling POST APIIIIIIIIII')
+  // console.log('POST options =>', _options);
+  var req = rp.post(_options);
+  delete req.body;
+  var form = req.form();
+
+  _.each(Object.keys(params), function (key) {
+    form.append(key, params[key]);
+  });
+
+  return req;
+};
+
+
