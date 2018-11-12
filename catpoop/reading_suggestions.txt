@@ -1,0 +1,18 @@
+grokking algorithms
+https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230
+
+Intelligent discussions -
+https://news.ycombinator.com/
+
+paul grahams articles
+http://www.paulgraham.com/
+
+Science - 
+http://nautil.us/
+
+The macro -
+https://blog.ycombinator.com/learning-math-for-machine-learning/
+
+Harvards great cs course -cs50 by david malan 
+checkout the 2017 version 
+https://www.youtube.com/watch?v=y62zj9ozPOM 
