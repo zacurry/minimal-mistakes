@@ -1,7 +1,7 @@
 ---
 title:  "My developer set up"
 header:
-  image: /assets/images/dev-setup.jpg
+  image: /assets/images/dev-setup2.jpg
   caption: "my developer set up"
 date:   2020-02-15 00:50:00
 category: post
