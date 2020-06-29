@@ -94,7 +94,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/sany-cyrus-623161162//in/sany-cyrus-623161162/"
+  linkedin         : "/in/sany-cyrus-623161162//in/sany-cyrus-623161162/"
   pinterest        :
   soundcloud       :
   stackoverflow    : "/1284845/zacurry" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -105,6 +105,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  resume           : "https://docs.google.com/document/d/1NaY0NMN3eQmJWsa7WpVWMABFj5GxyemJlFdrWGa9T8g/edit?usp=sharing"
 
 
 # Reading Files
